@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Найти портфолио">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Страница 2">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+    <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
+    <meta name="referrer" content="origin">
+    <title>Страница 2</title>
+    <link rel="stylesheet" href="{{ css }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+    <script class="u-script" type="text/javascript" src="{{ js2 }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ js }}" defer=""></script>
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+    }</script>
+  </head>
+  <body>
+      <header class="container-fluid">
+          <p class="logo font">ПОРТФОЛИО</p>
+      </header>
+      <div class="card-group container main">
+          <form action="" method="post" class="card card-body"
+                style="border-top:none;border-bottom:none;border-left:none;">
+              {{ form.hidden_tag() }}
+
+              <p>
+                {{ form.id(type="text", class="pole for-pol", size=30) }}
+
+                {% for error in form.id.errors %}
+                    <div class="alert alert-danger" role="alert">
+                        {{ error }}
+                    </div>
+                {% endfor %}
+
+              </p>
+              <p class="b3" style="margin-top:0;border:0;">{{ form.submit(type="submit", class="btn-for slise") }}</p>
+
+              {{message}}
+          </form>
+
+          <div class="card card-body"
+               style="border:none;">
+            <a href="{{ log }}"
+               class="btn-for b1" style="text-decoration:none;">
+                Войти
+            </a>
+            <a href="{{ reg }}" class="btn-for b2"
+               style="text-decoration:none;">
+                Зарегистрироваться
+            </a>
+          </div>
+      </div>
+      <a href="/all_profs" class="b4 btn-for" style="text-decoration:none;">ВСЕ ПРОФИЛИ</a>
+      <p class="for-joke">{{ anec.text(type=text, class="joke") }}</p>
+      <footer class="fixed-bottom" id="sec-5a24">
+          <div class="flex-column">
+              <a href="https://bootstrap-4.ru/" class="foo">Bootstrap</a>
+              <a href="https://ya.ru/" class="foo">Yandex</a>
+              <a href="https://wtforms.readthedocs.io/en/3.0.x/" class="foo">WTForms</a>
+              <a href="https://github.com/SeyonPetrov/KPweb.git" class="foo">GitHub</a>
+          </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+              crossorigin="anonymous"></script>
+</body>
+</html>

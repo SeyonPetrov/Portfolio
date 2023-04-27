@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/css/css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/static/Страница-1.css" />
+
+    <title>{{title}}</title>
+</head>
+  <body>
+      <header class="container-fluid fixed-top">
+          <p class="logo font">ПОРТФОЛИО</p>
+      </header>
+<!-- Begin page content -->
+      <main role="main" class="container">
+          {% block content %}{% endblock %}
+      </main>
+      <footer>
+          <div class="flex-column">
+              <a href="https://bootstrap-4.ru/" class="foo">Bootstrap</a>
+              <a href="https://ya.ru/" class="foo">Yandex</a>
+              <a href="https://wtforms.readthedocs.io/en/3.0.x/" class="foo">WTForms</a>
+              <a href="https://github.com/" class="foo">GitHub</a>
+          </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+              crossorigin="anonymous"></script>
+  </body>
+</html>

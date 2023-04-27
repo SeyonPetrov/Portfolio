@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Главная">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+    <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
+    <meta name="referrer" content="origin">
+    <title>Главная</title>
+    <link rel="stylesheet" href="static/css/css2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ ni }}" media="screen">
+    <link rel="stylesheet" href="{{ glavcss }}" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <script class="u-script" type="text/javascript" src="{{ js2 }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ js }}" defer=""></script>
+    <script type="application/ld+json">{
+    		"@context": "http://schema.org",
+    		"@type": "Organization",
+    		"name": ""
+            }
+    </script>
+
+<style>
+        header {
+          background-color: #cbbc97;
+          height: 10rem;
+        }
+        footer {
+          background-color: #323433;
+          color: white;
+          text-align: center;
+          padding: 2.5% 0;
+        }
+        .logo {
+          text-align: center;
+        }
+        .font {
+          color: white;
+          font-size: 60px;
+        }
+        a {
+          text-decoration: none;
+        }
+        .card {
+          border-top: none;
+          border-bottom: none;
+          border-left: none;
+        }
+        .lop {
+          border-right: none;
+
+        }
+        .main {
+          margin-top: 15%;
+        }
+        .b2 {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 1em;
+
+        }
+        .btn-for {
+          position: relative;
+          background-color: #81979b;
+          color: white;
+          border-radius: 0 35px 35px 0;
+          padding: 1.3rem 3rem;
+          transition: 0.3s;
+          font-weight: bold;
+          border: none;
+          top: -5.65rem;
+          left: 12rem;
+        }
+        .btn-for:hover {
+          background-color: #9dafb3;
+          color: #FFEFDF;
+          box-shadow: 7px 7px 7px #cccccc;
+        }
+        .pole {
+          position: relative;
+          display: block;
+          padding: 1.2rem 5rem;
+          border-radius: 25px;
+          border-color: #a9bcc2;
+          left: 26rem;
+        }
+        .gol {
+          top:-4.5rem;
+          left: 5rem;
+        }
+        .list {
+          right: 5rem;
+        }
+        .for-crd {
+          top: 5rem;
+        }
+        .bb {
+          position: relative;
+          background-color: #81979b;
+          color: white;
+          border-radius: 0 35px 35px 0;
+          padding: 1.3rem 3rem;
+          transition: 0.5s;
+          font-weight: bold;
+          border: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="u-clearfix u-custom-color-4 u-header u-header"
+            id="sec-0104">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-unstyled u-nav-1 list">
+                        <li class="u-nav-item">
+                            <a class="u-active-white u-button-style u-nav-link u-text-custom-color-6"
+                               href="/">ГЛАВНАЯ
+                            </a>
+                        </li>
+                        <li class="u-nav-item">
+                            <a class="u-active-white u-button-style u-nav-link u-text-custom-color-6"
+                               href="Страница-1.html">ПРОФИЛЬ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="u-text u-text-white u-text-1 gol align-middle">ПОРТФ​ОЛИО </p>
+
+        </div>
+
+    </header>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <div class="card card-body" style="border:none;top:5rem;">
+          <p class="b1">
+            {{ form.id(type="text", class="pole", size=30) }}
+
+            {% for error in form.id.errors %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+            {% endfor %}
+          </p>
+          <p class="b2" style="margin-top:0;border:0;">{{ form.submit(type="submit", class="btn-for") }}</p>
+        </div>
+        {{message}}
+    </form><br>
+    <a href="/all_profs" class="b4" style="text-decoration:none;">ВСЕ ПРОФИЛИ</a>
+    <p>{{ text.text(type="text", class="fact") }}</p>
+    <footer class="fixed-bottom">
+          <div class="flex-column">
+              <a href="https://bootstrap-4.ru/" class="foo" target="_blank">Bootstrap</a>
+              <a href="https://ya.ru/" class="foo" target="_blank">Yandex</a>
+              <a href="https://wtforms.readthedocs.io/en/3.0.x/" class="foo" target="_blank">WTForms</a>
+              <a href="https://github.com/SeyonPetrov/KPweb.git" class="foo" target="_blank">GitHub</a>
+              <a href="/logout" class="foo">X</a>
+          </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</body>
+</html>
